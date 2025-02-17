@@ -1,0 +1,12 @@
+name: Test action
+on:
+  push:
+    branches: "main"
+  pull_request:
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jcbhmr/configure-bun-action@v1
+      - uses: ./

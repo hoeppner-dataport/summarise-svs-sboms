@@ -5,6 +5,7 @@ on:
 
 jobs:
     test-action:
+        name: Test the action now
         runs-on: ubuntu-latest
         steps:
             # ...

@@ -2,8 +2,13 @@
   "name": "summarise-svs-sboms",
   "module": "main.ts",
   "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -13,6 +18,7 @@
     "@actions/github": "^6.0.0",
     "axios": "^1.7.9",
     "axios-cache-interceptor": "^1.6.2",
-    "spdx-license-list": "^6.9.0"
+    "spdx-license-list": "^6.9.0",
+    "tsc": "^2.0.4"
   }
 }

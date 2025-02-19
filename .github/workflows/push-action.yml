@@ -9,11 +9,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - uses: oven-sh/setup-bun@v2
-              with:
-                  bun-version: latest
 
-            # run any `bun` or `bunx` command
-            - run: bun install
-            - run: bun ./local_test.ts
-            # - run: bun run build
+            - run: node ./local_test.ts

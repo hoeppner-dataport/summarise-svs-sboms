@@ -1,24 +1,12 @@
 {
   "name": "summarise-svs-sboms",
-  "module": "main.ts",
+  "module": "index.js",
   "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "typescript": "^5.7.3"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
     "axios": "^1.7.9",
     "axios-cache-interceptor": "^1.6.2",
-    "spdx-license-list": "^6.9.0",
-    "tsc": "^2.0.4"
+    "spdx-license-list": "^6.9.0"
   }
 }

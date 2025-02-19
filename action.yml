@@ -13,5 +13,5 @@ outputs:
         description: "The summarizing JSON of all dependencies grouped by license."
 
 runs:
-    using: bun1
+    using: node20
     main: main.ts

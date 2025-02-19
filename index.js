@@ -22,3 +22,5 @@ export const run = async () => {
         core.error(message);
     }
 };
+
+run();

@@ -13,6 +13,6 @@ jobs:
                   bun-version: latest
 
             # run any `bun` or `bunx` command
-            - run: bun install
+            # - run: bun install
             - run: bun ./index.ts
-            - run: bun run build
+            # - run: bun run build

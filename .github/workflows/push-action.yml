@@ -15,5 +15,5 @@ jobs:
 
             # run any `bun` or `bunx` command
             # - run: bun install
-            - run: bun ./main.ts
+            - run: bun ./local_test.ts
             # - run: bun run build

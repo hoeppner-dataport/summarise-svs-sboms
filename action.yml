@@ -1,15 +1,17 @@
-name: Hello world!
+name: Summarize SVS SBOMs
 description: 👋 Greet someone and record the time
 
 inputs:
-  name:
-    description: Who to greet
-    default: ${{ github.actor }}
+    filename:
+        description: "The filename containing the individual sboms of the SVS-repos"
+
+    repos:
+        description: "Comma-separated list of repositories and their versions {repo}@{version}"
 
 outputs:
-  time:
-    description: The time we greeted you
+    json:
+        description: "The summarizing JSON of all dependencies grouped by license."
 
 runs:
-  using: bun1
-  main: main.ts
+    using: bun1
+    main: main.ts

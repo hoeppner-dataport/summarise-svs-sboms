@@ -1,0 +1,13 @@
+name: Push run bun
+
+on:
+    push:
+
+jobs:
+    test-action:
+        name: Test the action now
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - run: npm install
+            - run: node ./dist/index.js

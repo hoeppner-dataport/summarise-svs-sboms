@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import loadSboms from "./src/loadSboms.js";
 import MergedSbom from "./src/MergedSbom.js";
-import core from "@actions/core";
+const core = require("@actions/core");
 
 const filename = core.getInput("filename") ? core.getInput("filename") : "dependencies.sbom.json";
 const reposString = core.getInput("repos");

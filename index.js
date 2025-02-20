@@ -9,6 +9,8 @@ const reposString = core.getInput("repos");
 export const run = async () => {
     try {
         core.info("=== 1. Loading SBOMs ===");
+        core.info("filename: " + filename);
+        core.info("repoString: " + reposString);
         const repos = reposString !== "" ? reposString.split(";") : ["hpi-schul-cloud/tldraw-server:999.6.6"];
         const sboms = await loadSboms(filename, repos);
 

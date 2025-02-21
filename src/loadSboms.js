@@ -35,7 +35,7 @@ async function loadSbom(repository, repositoryVersion, filename) {
     const sbomUrl = `https://github.com/${repository}/releases/download/${repositoryVersion}/${filename}`;
     const response = await axiosInstance.get(sbomUrl);
     if (response.status !== 200) {
-        core.error(`Failed to load SBOM for ${repository}@${repositoryVersion} (status: ${response.status})`);
+        core.error(`Failed to load SBOM for "${repository}@${repositoryVersion}" (status: ${response.status})`);
         return;
     }
     const sbom = {

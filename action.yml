@@ -6,7 +6,7 @@ inputs:
         description: "The filename containing the individual sboms of the SVS-repos"
 
     repos:
-        description: "Comma-separated list of repositories and their versions {repo}@{version}"
+        description: "Semicolon-separated list of repositories and their versions {repo}@{version}"
 
 outputs:
     json:
@@ -14,4 +14,4 @@ outputs:
 
 runs:
     using: node20
-    main: ./index.js
+    main: ./dist/index.js

@@ -2,6 +2,9 @@
   "name": "summarise-svs-sboms",
   "module": "index.js",
   "type": "module",
+  "scripts": {
+    "build": "npx ncc build index.js -o dist"
+  },
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
